@@ -1,19 +1,17 @@
 package calculadorajm.test;
 
-import calculadorajm.dominio.Calculadora;
-import calculadorajm.servico.CalculadoraLoop;
 
+
+import calculadorajm.dominio.Operacao;
+import calculadorajm.dominio.Somar;
+import calculadorajm.dominio.Subtrair;
+import calculadorajm.servico.Calculadora;
 import java.util.Scanner;
 
 public class CalculadoraJm {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Calculadora calculadora = new Calculadora();
-        CalculadoraLoop calculadoraLoop = new CalculadoraLoop();
-        double resultadoSoma;
-        double resultadoSubtracao;
-        double resultadoMultiplicacao;
-        double resultadoDivisao;
         char switchChar ='n';
         int switchInt ;
 
@@ -33,16 +31,23 @@ public class CalculadoraJm {
                 switch (switchInt){
                     case 1:
                         System.out.println("1");
-                        calculadoraLoop.somaLoop();
+                        Operacao oSomar = new Somar();
+                        calculadora.calcular(oSomar);
                         break;
                     case 2:
                         System.out.println("2");
+                        Operacao oSubtrair = new Subtrair();
+                        calculadora.calcular(oSubtrair);
                         break;
                     case 3:
                         System.out.println("3");
+                        Operacao oMultiplicar = new Subtrair();
+                        calculadora.calcular(oMultiplicar);
                         break;
                     case 4:
                         System.out.println("4");
+                        Operacao oDividir = new Subtrair();
+                        calculadora.calcular(oDividir);
                         break;
                     default:
                         System.out.println("Opcão inválida");

@@ -1,11 +1,11 @@
 package calculadorajm.servico;
 
-import calculadorajm.dominio.Calculadora;
+import calculadorajm.dominio.CalculadoraD;
 
 import java.util.Scanner;
 
 public class CalculadoraLoop {
-    Calculadora calculadora = new Calculadora();
+    CalculadoraD calculadoraD = new CalculadoraD();
     Scanner scanner = new Scanner(System.in);
 
     public void somaLoop(){

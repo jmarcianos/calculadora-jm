@@ -1,6 +1,6 @@
 package calculadorajm.dominio;
 
-public class Calculadora {
+public class CalculadoraD {
     public double soma(double num1, double num2) {
         return num1 + num2;
     }
@@ -18,6 +18,7 @@ public class Calculadora {
             //System.out.println("Divisão inválida, não se pode dividir por 0");
             return 0;
         }
+        System.out.println();
         return num1 / num2;
     }
 
