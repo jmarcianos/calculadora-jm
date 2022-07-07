@@ -2,9 +2,7 @@ package calculadorajm.test;
 
 
 
-import calculadorajm.dominio.Operacao;
-import calculadorajm.dominio.Somar;
-import calculadorajm.dominio.Subtrair;
+import calculadorajm.dominio.*;
 import calculadorajm.servico.Calculadora;
 import java.util.Scanner;
 
@@ -43,11 +41,11 @@ public class CalculadoraJm {
                         Calculadora.calcular(oSubtrair);
                         break;
                     case 3:
-                        Operacao oMultiplicar = new Subtrair(num1,num2);
+                        Operacao oMultiplicar = new Multiplicar(num1,num2);
                         Calculadora.calcular(oMultiplicar);
                         break;
                     case 4:
-                        Operacao oDividir = new Subtrair(num1,num2);
+                        Operacao oDividir = new Dividir(num1,num2);
                         Calculadora.calcular(oDividir);
                         break;
                     default:
