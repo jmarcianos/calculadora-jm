@@ -33,20 +33,20 @@ public class CalculadoraJm {
 
                 switch (switchInt){
                     case 1:
-                        Operacao oSomar = new Somar(num1,num2);
-                        Calculadora.calcular(oSomar);
+                        Operacao oSomar = new Somar();
+                        Calculadora.calcular(oSomar,num1,num2);
                         break;
                     case 2:
-                        Operacao oSubtrair = new Subtrair(num1,num2);
-                        Calculadora.calcular(oSubtrair);
+                        Operacao oSubtrair = new Subtrair();
+                        Calculadora.calcular(oSubtrair,num1,num2);
                         break;
                     case 3:
-                        Operacao oMultiplicar = new Multiplicar(num1,num2);
-                        Calculadora.calcular(oMultiplicar);
+                        Operacao oMultiplicar = new Multiplicar();
+                        Calculadora.calcular(oMultiplicar,num1,num2);
                         break;
                     case 4:
-                        Operacao oDividir = new Dividir(num1,num2);
-                        Calculadora.calcular(oDividir);
+                        Operacao oDividir = new Dividir();
+                        Calculadora.calcular(oDividir,num1,num2);
                         break;
                     default:
                         System.out.println("Opcão inválida");
